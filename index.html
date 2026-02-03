@@ -240,30 +240,34 @@ z-index:999;
    onclick="fbq('track','Contact'); gtag('event','conversion');">
 💬
 </a>
-<!-- Chatwoot (Widget do site) -->
+<!-- Chatwoot Widget -->
 <script>
-  (function(d,t) {
+  (function (d, t) {
     var BASE_URL = "https://gessoetintas.com";
-    var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-    g.src = BASE_URL + "/packs/js/sdk.js";
-    g.defer = true;
-    g.async = true;
-    s.parentNode.insertBefore(g,s);
+    var g = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
 
-    g.onload = function() {
+    g.src = BASE_URL + "/packs/js/sdk.js";
+    g.async = true;
+    g.defer = true;
+    s.parentNode.insertBefore(g, s);
+
+    g.onload = function () {
       window.chatwootSDK.run({
-        websiteToken: 'xyYNwr6m2wa6DKeWmvu3jnbR',
+        websiteToken: "xyYNwr6m2wa6DKeWmvu3jnbR",
         baseUrl: BASE_URL
       });
-    }
-  })(document,"script");
+    };
+  })(document, "script");
 </script>
+
   
 </body>
 </html>
 
     
     
+
 
 
 
