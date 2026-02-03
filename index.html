@@ -241,8 +241,28 @@ z-index:999;
 💬
 </a>
 
+    <script>
+      (function(d,t) {
+        var BASE_URL="http://174.138.86.55:3000";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        g.defer = true;
+        g.async = true;
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.chatwootSDK.run({
+            websiteToken: 'xyYNwr6m2wa6DKeWmvu3jnbR',
+            baseUrl: BASE_URL
+          })
+        }
+      })(document,"script");
+    </script>
+    
 </body>
 </html>
+
+    
+    
 
 
 
