@@ -1,250 +1,315 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mineirinho Tech | iPhones Originais com Garantia</title>
 
-  <!-- META PIXEL -->
-
-  <script>
-    !function(f,b,e,v,n,t,s){
-      if(f.fbq)return;n=f.fbq=function(){
-      n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;
-      n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)
-    }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-    fbq('init', '3768903296743485');
-    fbq('track', 'PageView');
-  </script>
-
-  <!-- GOOGLE TAG -->
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VECEQQ6Z6D"></script>
-
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-VECEQQ6Z6D');
-  </script>
-
   <style>
-    body{
+    *{
       margin:0;
+      padding:0;
+      box-sizing:border-box;
       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+    }
+
+    body{
       background:#050A1F;
       color:#fff;
+      line-height:1.5;
     }
 
     .container{
       max-width:1100px;
-      margin:auto;
-      padding:20px;
+      margin:0 auto;
+      padding:0 20px;
       text-align:center;
     }
 
     .hero{
-      background:linear-gradient(#050A1F,#0A2AFF);
-      padding:40px 20px;
+      background:linear-gradient(180deg,#050A1F 0%,#0A2AFF 100%);
+      padding:35px 20px 50px;
     }
 
     .logo{
       width:130px;
-      margin-bottom:20px;
+      margin-bottom:18px;
+    }
+
+    .badge{
+      display:inline-block;
+      background:rgba(255,255,255,0.12);
+      padding:10px 16px;
+      border-radius:999px;
+      font-size:14px;
+      margin-bottom:18px;
+      color:#E0E7FF;
     }
 
     h1{
       font-size:32px;
-      margin-bottom:10px;
+      line-height:1.15;
+      margin-bottom:14px;
+    }
+
+    h2{
+      font-size:28px;
+      margin-bottom:16px;
     }
 
     p{
       color:#DCE4FF;
       font-size:16px;
+      margin-bottom:18px;
+    }
+
+    .video-wrap{
+      max-width:430px;
+      margin:25px auto;
+      border-radius:22px;
+      overflow:hidden;
+      background:#000;
+      box-shadow:0 10px 30px rgba(0,0,0,0.45);
+    }
+
+    .video-wrap video{
+      width:100%;
+      display:block;
+      border-radius:22px;
+      background:#000;
     }
 
     .btn{
       background:#25D366;
-      padding:18px 30px;
-      border-radius:12px;
       color:#fff;
+      padding:18px 30px;
+      border-radius:14px;
       text-decoration:none;
-      font-weight:bold;
+      font-size:18px;
+      font-weight:700;
       display:inline-block;
-      margin-top:20px;
+      margin-top:10px;
+      box-shadow:0 8px 22px rgba(0,0,0,0.35);
     }
 
-    .video-wrap{
-      max-width:420px;
-      margin:25px auto;
-      border-radius:20px;
-      overflow:hidden;
-    }
-
-    video{
-      width:100%;
-      border-radius:20px;
+    .section{
+      padding:48px 20px;
     }
 
     .gallery{
-      padding:40px 20px;
+      background:#050A1F;
     }
 
     .photos{
       display:grid;
       grid-template-columns:repeat(2,1fr);
-      gap:12px;
+      gap:14px;
+      max-width:760px;
+      margin:0 auto;
     }
 
     .photos img{
       width:100%;
-      border-radius:12px;
-      height:180px;
+      height:210px;
       object-fit:cover;
+      border-radius:16px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.45);
     }
 
-    .section{
-      padding:50px 20px;
+    .benefits{
+      background:#0E1538;
+    }
+
+    .benefit-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:16px;
+      max-width:900px;
+      margin:0 auto;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:18px;
+      padding:22px;
+      text-align:left;
+    }
+
+    .card h3{
+      font-size:18px;
+      margin-bottom:8px;
+    }
+
+    .final{
+      background:linear-gradient(180deg,#0A2AFF,#050A1F);
+      padding:55px 20px;
       text-align:center;
     }
 
-    .whats-float{
+    .float-link{
       position:fixed;
-      bottom:20px;
       right:20px;
-      background:#25D366;
+      bottom:20px;
       width:60px;
       height:60px;
+      background:#25D366;
       border-radius:50%;
       display:flex;
       align-items:center;
       justify-content:center;
-      font-size:24px;
       color:#fff;
       text-decoration:none;
+      font-size:26px;
+      box-shadow:0 0 18px rgba(0,0,0,0.6);
+      z-index:999;
     }
 
     @media(max-width:768px){
-      h1{font-size:26px;}
-      .photos img{height:140px;}
+      h1{font-size:27px;}
+      h2{font-size:24px;}
+
+      .photos{
+        grid-template-columns:1fr 1fr;
+      }
+
+      .photos img{
+        height:155px;
+      }
+
+      .benefit-grid{
+        grid-template-columns:1fr;
+      }
+
+      .btn{
+        width:100%;
+        max-width:360px;
+      }
     }
   </style>
-
 </head>
 
 <body>
 
-<!-- HERO -->
+  <section class="hero">
+    <div class="container">
 
-<section class="hero">
-  <div class="container">
+      <img src="logo.png" alt="Mineirinho Tech" class="logo">
 
-```
-<img src="logo.png" class="logo">
+      <div class="badge">
+        Loja física • Garantia • Procedência • Atendimento especializado
+      </div>
 
-<h1>Seu iPhone original com garantia e procedência</h1>
+      <h1>Seu iPhone original com garantia e procedência</h1>
 
-<p>Loja física, aparelhos revisados e atendimento especializado.</p>
+      <p>
+        Compre com segurança na Mineirinho Tech. Aparelhos revisados,
+        loja física e suporte antes, durante e depois da compra.
+      </p>
 
-<!-- VIDEO -->
-<div class="video-wrap">
-  <video controls autoplay muted playsinline preload="metadata">
-    <source src="video.mp4" type="video/mp4">
-    Seu navegador não suporta vídeo.
-  </video>
-</div>
+      <div class="video-wrap">
+        <video controls muted playsinline preload="metadata">
+          <source src="video.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo.
+        </video>
+      </div>
 
-<a class="btn"
-   href="https://linklist.bio/mineirinhotech_direct"
-   target="_blank"
-   onclick="fbq('track','Contact'); gtag('event','conversion');">
-  📲 Acessar atendimento
-</a>
-```
+      <a class="btn"
+         href="https://linklist.bio/mineirinhotech_direct"
+         target="_blank"
+         rel="noopener noreferrer">
+        📲 Acessar atendimento
+      </a>
 
-  </div>
-</section>
+    </div>
+  </section>
 
-<!-- GALERIA -->
+  <section class="section gallery">
+    <div class="container">
 
-<section class="gallery">
-  <div class="container">
+      <h2>Veja nossa loja</h2>
 
-```
-<h2>Veja nossa loja</h2>
+      <p>
+        Estrutura real, atendimento presencial e clientes comprando com segurança.
+      </p>
 
-<div class="photos">
-  <img src="loja1.jpg">
-  <img src="loja2.jpeg">
-  <img src="loja3.jpg">
-  <img src="loja4.jpg">
-  <img src="loja5.jpg">
-  <img src="loja6.jpg">
-  <img src="loja7.jpg">
-</div>
-```
+      <div class="photos">
+        <img src="loja1.jpg" alt="Loja Mineirinho Tech">
+        <img src="loja2.jpeg" alt="Atendimento Mineirinho Tech">
+        <img src="loja3.jpg" alt="Aparelhos Mineirinho Tech">
+        <img src="loja4.jpg" alt="Ambiente da loja">
+        <img src="loja5.jpg" alt="Clientes Mineirinho Tech">
+        <img src="loja6.jpg" alt="Estrutura Mineirinho Tech">
+        <img src="loja7.jpg" alt="Prova social Mineirinho Tech">
+      </div>
 
-  </div>
-</section>
+    </div>
+  </section>
 
-<!-- BENEFÍCIOS -->
+  <section class="section benefits">
+    <div class="container">
 
-<section class="section">
-  <div class="container">
+      <h2>Por que comprar com a Mineirinho Tech?</h2>
 
-```
-<h2>Por que comprar com a gente?</h2>
+      <div class="benefit-grid">
 
-<p>
-  ✔ iPhones originais revisados<br>
-  ✔ Garantia real<br>
-  ✔ Loja física<br>
-  ✔ Atendimento especializado
-</p>
+        <div class="card">
+          <h3>✅ iPhones originais revisados</h3>
+          <p>Aparelhos conferidos para você comprar com mais segurança.</p>
+        </div>
 
-<a class="btn"
-   href="https://linklist.bio/mineirinhotech_direct"
-   target="_blank">
-  🔥 Ver opções disponíveis
-</a>
-```
+        <div class="card">
+          <h3>✅ Garantia real</h3>
+          <p>Você não compra no escuro. Tem suporte e atendimento depois da compra.</p>
+        </div>
 
-  </div>
-</section>
+        <div class="card">
+          <h3>✅ Loja física</h3>
+          <p>Empresa real, com estrutura, equipe e atendimento presencial.</p>
+        </div>
 
-<!-- SEGURANÇA -->
+        <div class="card">
+          <h3>✅ Atendimento especializado</h3>
+          <p>Ajudamos você a escolher o melhor modelo para seu uso e orçamento.</p>
+        </div>
 
-<section class="section">
-  <div class="container">
+      </div>
 
-```
-<h2>Compra segura</h2>
+      <a class="btn"
+         href="https://linklist.bio/mineirinhotech_direct"
+         target="_blank"
+         rel="noopener noreferrer">
+        🔥 Ver opções disponíveis
+      </a>
 
-<p>Empresa real, suporte completo e negociação transparente.</p>
+    </div>
+  </section>
 
-<a class="btn"
-   href="https://linklist.bio/mineirinhotech_direct"
-   target="_blank">
-  📲 Quero atendimento imediato
-</a>
-```
+  <section class="final">
+    <div class="container">
 
-  </div>
-</section>
+      <h2>Pronto para comprar seu iPhone com segurança?</h2>
 
-<!-- BOTÃO FLUTUANTE -->
+      <p>
+        Clique no botão abaixo e acesse os canais oficiais da Mineirinho Tech.
+      </p>
 
-<a class="whats-float"
-href="https://linklist.bio/mineirinhotech_direct"
-target="_blank">
-🔗 </a>
+      <a class="btn"
+         href="https://linklist.bio/mineirinhotech_direct"
+         target="_blank"
+         rel="noopener noreferrer">
+        📲 Quero atendimento agora
+      </a>
+
+    </div>
+  </section>
+
+  <a class="float-link"
+     href="https://linklist.bio/mineirinhotech_direct"
+     target="_blank"
+     rel="noopener noreferrer">
+    🔗
+  </a>
 
 </body>
 </html>
-
