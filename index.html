@@ -1,158 +1,250 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mineirinho Tech | iPhones Originais</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mineirinho Tech | iPhones Originais com Garantia</title>
 
-<style>
-body{
-  margin:0;
-  font-family:Arial;
-  background:#050A1F;
-  color:#fff;
-}
+  <!-- META PIXEL -->
 
-.container{
-  max-width:1000px;
-  margin:auto;
-  padding:20px;
-  text-align:center;
-}
+  <script>
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq)return;n=f.fbq=function(){
+      n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-.hero{
-  background:linear-gradient(#050A1F,#0A2AFF);
-  padding:40px 20px;
-}
+    fbq('init', '3768903296743485');
+    fbq('track', 'PageView');
+  </script>
 
-.logo{
-  width:120px;
-  margin-bottom:20px;
-}
+  <!-- GOOGLE TAG -->
 
-h1{font-size:28px;}
-p{color:#DCE4FF;}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VECEQQ6Z6D"></script>
 
-.btn{
-  background:#25D366;
-  padding:16px 26px;
-  border-radius:10px;
-  color:#fff;
-  text-decoration:none;
-  display:inline-block;
-  margin-top:20px;
-  font-weight:bold;
-}
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VECEQQ6Z6D');
+  </script>
 
-.gallery{
-  padding:40px 20px;
-}
+  <style>
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+      background:#050A1F;
+      color:#fff;
+    }
 
-.photos{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:10px;
-}
+    .container{
+      max-width:1100px;
+      margin:auto;
+      padding:20px;
+      text-align:center;
+    }
 
-.photos img{
-  width:100%;
-  border-radius:10px;
-}
+    .hero{
+      background:linear-gradient(#050A1F,#0A2AFF);
+      padding:40px 20px;
+    }
 
-.section{
-  padding:40px 20px;
-  text-align:center;
-}
+    .logo{
+      width:130px;
+      margin-bottom:20px;
+    }
 
-.whats-float{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  width:60px;
-  height:60px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:24px;
-  text-decoration:none;
-  color:#fff;
-}
-</style>
+    h1{
+      font-size:32px;
+      margin-bottom:10px;
+    }
+
+    p{
+      color:#DCE4FF;
+      font-size:16px;
+    }
+
+    .btn{
+      background:#25D366;
+      padding:18px 30px;
+      border-radius:12px;
+      color:#fff;
+      text-decoration:none;
+      font-weight:bold;
+      display:inline-block;
+      margin-top:20px;
+    }
+
+    .video-wrap{
+      max-width:420px;
+      margin:25px auto;
+      border-radius:20px;
+      overflow:hidden;
+    }
+
+    video{
+      width:100%;
+      border-radius:20px;
+    }
+
+    .gallery{
+      padding:40px 20px;
+    }
+
+    .photos{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:12px;
+    }
+
+    .photos img{
+      width:100%;
+      border-radius:12px;
+      height:180px;
+      object-fit:cover;
+    }
+
+    .section{
+      padding:50px 20px;
+      text-align:center;
+    }
+
+    .whats-float{
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25D366;
+      width:60px;
+      height:60px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:24px;
+      color:#fff;
+      text-decoration:none;
+    }
+
+    @media(max-width:768px){
+      h1{font-size:26px;}
+      .photos img{height:140px;}
+    }
+  </style>
+
 </head>
 
 <body>
 
-<section class="hero">
-<div class="container">
+<!-- HERO -->
 
+<section class="hero">
+  <div class="container">
+
+```
 <img src="logo.png" class="logo">
 
 <h1>Seu iPhone original com garantia e procedência</h1>
 
 <p>Loja física, aparelhos revisados e atendimento especializado.</p>
 
-<a class="btn" href="https://linklist.bio/mineirinhotech_direct" target="_blank">
-📲 Acessar atendimento
-</a>
-
+<!-- VIDEO -->
+<div class="video-wrap">
+  <video controls autoplay muted playsinline preload="metadata">
+    <source src="vídeo.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo.
+  </video>
 </div>
+
+<a class="btn"
+   href="https://linklist.bio/mineirinhotech_direct"
+   target="_blank"
+   onclick="fbq('track','Contact'); gtag('event','conversion');">
+  📲 Acessar atendimento
+</a>
+```
+
+  </div>
 </section>
 
-<section class="gallery">
-<div class="container">
+<!-- GALERIA -->
 
+<section class="gallery">
+  <div class="container">
+
+```
 <h2>Veja nossa loja</h2>
 
 <div class="photos">
-<img src="loja1.jpg">
-<img src="loja2.jpg">
-<img src="loja3.jpg">
-<img src="loja4.jpg">
-<img src="loja5.jpg">
-<img src="loja6.jpg">
+  <img src="loja1.jpg">
+  <img src="loja2.jpeg">
+  <img src="loja3.jpg">
+  <img src="loja4.jpg">
+  <img src="loja5.jpg">
+  <img src="loja6.jpg">
+  <img src="loja7.jpg">
 </div>
+```
 
-</div>
+  </div>
 </section>
 
-<section class="section">
-<div class="container">
+<!-- BENEFÍCIOS -->
 
+<section class="section">
+  <div class="container">
+
+```
 <h2>Por que comprar com a gente?</h2>
 
 <p>
-✔ iPhones originais revisados<br>
-✔ Garantia real<br>
-✔ Loja física<br>
-✔ Atendimento especializado
+  ✔ iPhones originais revisados<br>
+  ✔ Garantia real<br>
+  ✔ Loja física<br>
+  ✔ Atendimento especializado
 </p>
 
-<a class="btn" href="https://linklist.bio/mineirinhotech_direct" target="_blank">
-🔥 Ver opções disponíveis
+<a class="btn"
+   href="https://linklist.bio/mineirinhotech_direct"
+   target="_blank">
+  🔥 Ver opções disponíveis
 </a>
+```
 
-</div>
+  </div>
 </section>
 
-<section class="section">
-<div class="container">
+<!-- SEGURANÇA -->
 
+<section class="section">
+  <div class="container">
+
+```
 <h2>Compra segura</h2>
 
 <p>Empresa real, suporte completo e negociação transparente.</p>
 
-<a class="btn" href="https://linklist.bio/mineirinhotech_direct" target="_blank">
-📲 Quero atendimento imediato
+<a class="btn"
+   href="https://linklist.bio/mineirinhotech_direct"
+   target="_blank">
+  📲 Quero atendimento imediato
 </a>
+```
 
-</div>
+  </div>
 </section>
 
-<a class="whats-float" href="https://linklist.bio/mineirinhotech_direct" target="_blank">
-🔗
-</a>
+<!-- BOTÃO FLUTUANTE -->
+
+<a class="whats-float"
+href="https://linklist.bio/mineirinhotech_direct"
+target="_blank">
+🔗 </a>
 
 </body>
 </html>
+
