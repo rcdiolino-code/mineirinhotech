@@ -5,26 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mineirinho Tech | iPhones Originais</title>
+<title>Mineirinho Tech | Confiança e Tecnologia</title>
 
-  <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1242375364420072');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1242375364420072&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-  
 <!-- META PIXEL -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -43,8 +25,10 @@ s.parentNode.insertBefore(t,s)}
 (window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '3768903296743485');
+fbq('init', '1242375364420072');
 fbq('track', 'PageView');
+
+fbq('init', '3768903296743485');
 fbq('track', 'ViewContent');
 </script>
 
@@ -64,7 +48,6 @@ function gtag(){
 }
 
 gtag('js', new Date());
-
 gtag('config', 'G-VECEQQ6Z6D');
 </script>
 
@@ -77,178 +60,253 @@ gtag('config', 'G-VECEQQ6Z6D');
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
 body{
-  background:#050A1F;
+  background:#040814;
   color:#fff;
-  line-height:1.5;
+  overflow-x:hidden;
 }
 
 .container{
-  max-width:1100px;
+  max-width:1150px;
   margin:0 auto;
-  padding:0 20px;
-  text-align:center;
+  padding:0 22px;
 }
 
 .hero{
-  background:linear-gradient(180deg,#050A1F 0%,#0A2AFF 100%);
-  padding:35px 20px 50px;
+  background:
+  radial-gradient(circle at top,#1434ff 0%,#040814 65%);
+  padding:40px 0 90px;
+  text-align:center;
 }
 
 .logo{
-  width:130px;
-  margin-bottom:18px;
+  width:140px;
+  margin-bottom:25px;
 }
 
 .badge{
   display:inline-block;
-  background:rgba(255,255,255,0.12);
-  padding:10px 16px;
+  padding:10px 18px;
   border-radius:999px;
+  background:rgba(255,255,255,0.08);
+  color:#D7E1FF;
   font-size:14px;
-  margin-bottom:18px;
-  color:#E0E7FF;
+  margin-bottom:22px;
+  backdrop-filter:blur(10px);
 }
 
 h1{
-  font-size:32px;
-  line-height:1.15;
+  font-size:54px;
+  line-height:1.05;
+  max-width:850px;
+  margin:0 auto 22px;
+  font-weight:800;
+}
+
+.hero p{
+  max-width:760px;
+  margin:0 auto 25px;
+  color:#D8E2FF;
+  font-size:20px;
+  line-height:1.7;
+}
+
+.video-title{
+  margin-top:50px;
   margin-bottom:14px;
-}
-
-h2{
   font-size:28px;
-  margin-bottom:16px;
+  font-weight:700;
 }
 
-p{
-  color:#DCE4FF;
-  font-size:16px;
-  margin-bottom:18px;
+.video-sub{
+  color:#B8C5F2;
+  margin-bottom:30px;
 }
 
-/* BANNER TOPO */
-
-.banner-topo{
+.video-box{
+  position:relative;
   width:100%;
-  margin:25px auto;
-  border-radius:24px;
+  max-width:430px;
+  margin:0 auto;
+  padding-bottom:177%;
+  height:0;
   overflow:hidden;
-  box-shadow:0 10px 30px rgba(0,0,0,0.45);
+  border-radius:28px;
+  box-shadow:0 25px 60px rgba(0,0,0,0.55);
+  border:1px solid rgba(255,255,255,0.08);
 }
 
-.banner-topo img{
+.video-box iframe{
+  position:absolute;
+  top:0;
+  left:0;
   width:100%;
-  display:block;
-  border-radius:24px;
+  height:100%;
+  border:0;
 }
 
 .btn{
+  display:inline-block;
+  margin-top:35px;
   background:#25D366;
   color:#fff;
-  padding:18px 30px;
-  border-radius:14px;
+  padding:18px 34px;
+  border-radius:16px;
   text-decoration:none;
   font-size:18px;
   font-weight:700;
-  display:inline-block;
-  margin-top:10px;
-  box-shadow:0 8px 22px rgba(0,0,0,0.35);
+  transition:0.3s;
+  box-shadow:0 10px 35px rgba(37,211,102,0.35);
+}
+
+.btn:hover{
+  transform:translateY(-3px);
 }
 
 .section{
-  padding:48px 20px;
+  padding:90px 0;
+}
+
+.section-title{
+  font-size:42px;
+  text-align:center;
+  margin-bottom:18px;
+}
+
+.section-sub{
+  text-align:center;
+  color:#B9C7F2;
+  max-width:760px;
+  margin:0 auto 55px;
+  font-size:18px;
+  line-height:1.7;
 }
 
 .gallery{
-  background:#050A1F;
+  background:#060D22;
 }
 
 .photos{
   display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:14px;
-  max-width:760px;
-  margin:0 auto;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
 }
 
 .photos img{
   width:100%;
-  height:210px;
+  height:260px;
   object-fit:cover;
-  border-radius:16px;
-  box-shadow:0 6px 18px rgba(0,0,0,0.45);
+  border-radius:22px;
+  transition:0.4s;
+  box-shadow:0 10px 25px rgba(0,0,0,0.35);
 }
 
-.benefits{
-  background:#0E1538;
+.photos img:hover{
+  transform:scale(1.02);
 }
 
-.benefit-grid{
+.brand{
+  background:#040814;
+}
+
+.brand-grid{
   display:grid;
   grid-template-columns:repeat(2,1fr);
-  gap:16px;
-  max-width:900px;
-  margin:0 auto;
+  gap:22px;
 }
 
-.card{
-  background:rgba(255,255,255,0.05);
-  border:1px solid rgba(255,255,255,0.08);
-  border-radius:18px;
-  padding:22px;
-  text-align:left;
+.brand-card{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.06);
+  border-radius:24px;
+  padding:30px;
 }
 
-.card h3{
-  font-size:18px;
-  margin-bottom:8px;
+.brand-card h3{
+  margin-bottom:14px;
+  font-size:24px;
+}
+
+.brand-card p{
+  color:#C7D3F7;
+  line-height:1.8;
+  font-size:17px;
 }
 
 .final{
-  background:linear-gradient(180deg,#0A2AFF,#050A1F);
-  padding:55px 20px;
+  padding:110px 0;
   text-align:center;
+  background:
+  linear-gradient(180deg,#040814 0%,#0A2AFF 100%);
+}
+
+.final h2{
+  font-size:48px;
+  margin-bottom:20px;
+}
+
+.final p{
+  max-width:700px;
+  margin:0 auto 35px;
+  color:#D8E2FF;
+  line-height:1.8;
+  font-size:20px;
 }
 
 .float-link{
   position:fixed;
-  right:20px;
-  bottom:20px;
-  width:60px;
-  height:60px;
-  background:#25D366;
+  right:22px;
+  bottom:22px;
+  width:65px;
+  height:65px;
   border-radius:50%;
+  background:#25D366;
   display:flex;
   align-items:center;
   justify-content:center;
-  color:#fff;
   text-decoration:none;
-  font-size:26px;
-  box-shadow:0 0 18px rgba(0,0,0,0.6);
+  color:#fff;
+  font-size:28px;
   z-index:999;
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
 }
 
 @media(max-width:768px){
 
   h1{
-    font-size:27px;
+    font-size:36px;
   }
 
-  h2{
-    font-size:24px;
+  .hero p{
+    font-size:17px;
+  }
+
+  .section-title{
+    font-size:32px;
   }
 
   .photos{
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr;
+  }
+
+  .brand-grid{
+    grid-template-columns:1fr;
   }
 
   .photos img{
-    height:155px;
+    height:240px;
   }
 
-  .benefit-grid{
-    grid-template-columns:1fr;
+  .final h2{
+    font-size:34px;
+  }
+
+  .final p{
+    font-size:17px;
   }
 
   .btn{
@@ -264,76 +322,67 @@ p{
 <body>
 
 <section class="hero">
+
 <div class="container">
 
 <img src="logo.png" alt="Mineirinho Tech" class="logo">
 
 <div class="badge">
-Loja física • Garantia • Procedência
+Loja física • Procedência • Suporte real
 </div>
 
 <h1>
-Seu iPhone original com garantia e procedência
+Mais do que vender iPhones.<br>
+Criamos uma experiência segura para quem valoriza confiança.
 </h1>
 
 <p>
-Compre com segurança na Mineirinho Tech.
-Aparelhos revisados, loja física e suporte completo.
+A Mineirinho Tech nasceu para transformar a forma como as pessoas compram tecnologia.
+Com estrutura real, atendimento humano e aparelhos selecionados, entregamos muito mais do que um celular.
 </p>
 
-<!-- VIDEO TOPO -->
-<div class="banner-topo">
+<div class="video-title">
+Conheça a estrutura por trás da Mineirinho Tech
+</div>
 
-  <div style="
-    position: relative;
-    width: 100%;
-    max-width: 420px;
-    margin: 0 auto;
-    padding-bottom: 177%;
-    height: 0;
-    overflow: hidden;
-    border-radius: 24px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.45);
-  ">
+<div class="video-sub">
+Milhares de clientes atendidos com transparência, procedência e suporte verdadeiro.
+</div>
 
-    <iframe
-      id="ytvideo"
-      src="https://www.youtube.com/embed/UMNgEIXBppc?autoplay=1&mute=1&loop=1&playlist=UMNgEIXBppc&controls=1&modestbranding=1&rel=0&playsinline=1&enablejsapi=1"
-      title="Mineirinho Tech"
-      allow="autoplay; encrypted-media"
-      allowfullscreen
-      style="
-        position:absolute;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-        border:0;
-      ">
-    </iframe>
+<div class="video-box">
 
-  </div>
+<iframe
+src="https://www.youtube.com/embed/UMNgEIXBppc?autoplay=1&mute=1&loop=1&playlist=UMNgEIXBppc&controls=1&modestbranding=1&rel=0&playsinline=1"
+title="Mineirinho Tech"
+allow="autoplay; encrypted-media"
+allowfullscreen>
+</iframe>
 
 </div>
+
 <a
 class="btn btn-track"
 href="https://linklist.ai/mineirinhotech_site"
 target="_blank"
 >
-📲 Acessar atendimento
+📲 Falar com nossa equipe
 </a>
 
 </div>
+
 </section>
 
 <section class="section gallery">
 
 <div class="container">
 
-<h2>Veja nossa loja</h2>
+<h2 class="section-title">
+Clientes reais. Estrutura real.
+</h2>
 
-<p>
-Estrutura real, clientes reais e atendimento especializado.
+<p class="section-sub">
+Construímos uma marca baseada em transparência, experiência e relacionamento.
+Cada detalhe foi pensado para gerar segurança em toda jornada.
 </p>
 
 <div class="photos">
@@ -351,34 +400,50 @@ Estrutura real, clientes reais e atendimento especializado.
 
 </section>
 
-<section class="section benefits">
+<section class="section brand">
 
 <div class="container">
 
-<h2>
-Por que comprar com a Mineirinho Tech?
+<h2 class="section-title">
+Por que tantas pessoas confiam na Mineirinho Tech?
 </h2>
 
-<div class="benefit-grid">
+<p class="section-sub">
+Nossa prioridade nunca foi apenas vender aparelhos.
+Criamos uma empresa preparada para entregar confiança antes, durante e depois da compra.
+</p>
 
-<div class="card">
-<h3>✅ iPhones revisados</h3>
-<p>Aparelhos conferidos para sua segurança.</p>
+<div class="brand-grid">
+
+<div class="brand-card">
+<h3>✅ Procedência e transparência</h3>
+<p>
+Cada aparelho passa por uma seleção cuidadosa antes de chegar até você.
+Acreditamos que tecnologia deve gerar segurança, não preocupação.
+</p>
 </div>
 
-<div class="card">
-<h3>✅ Garantia real</h3>
-<p>Suporte antes e depois da compra.</p>
+<div class="brand-card">
+<h3>✅ Atendimento humano</h3>
+<p>
+Nosso time acompanha você em cada etapa da compra para garantir uma experiência clara, segura e personalizada.
+</p>
 </div>
 
-<div class="card">
-<h3>✅ Loja física</h3>
-<p>Empresa real com atendimento presencial.</p>
+<div class="brand-card">
+<h3>✅ Estrutura real</h3>
+<p>
+Loja física, equipe preparada e suporte verdadeiro.
+Aqui você sabe exatamente com quem está comprando.
+</p>
 </div>
 
-<div class="card">
-<h3>✅ Atendimento especializado</h3>
-<p>Te ajudamos a escolher o melhor modelo.</p>
+<div class="brand-card">
+<h3>✅ Relacionamento pós-venda</h3>
+<p>
+Nosso compromisso não termina quando a venda acaba.
+Continuamos disponíveis para oferecer suporte e acompanhamento sempre que precisar.
+</p>
 </div>
 
 </div>
@@ -388,7 +453,7 @@ class="btn btn-track"
 href="https://linklist.ai/mineirinhotech_site"
 target="_blank"
 >
-🔥 Ver opções disponíveis
+🔥 Conhecer os modelos disponíveis
 </a>
 
 </div>
@@ -400,11 +465,11 @@ target="_blank"
 <div class="container">
 
 <h2>
-Pronto para comprar seu iPhone?
+A confiança vem antes da venda.
 </h2>
 
 <p>
-Clique abaixo e fale agora com nosso atendimento.
+Fale agora com nossa equipe, conheça os modelos disponíveis e descubra por que a Mineirinho Tech vem conquistando cada vez mais clientes.
 </p>
 
 <a
@@ -412,7 +477,7 @@ class="btn btn-track"
 href="https://linklist.ai/mineirinhotech_site"
 target="_blank"
 >
-📲 Quero atendimento agora
+📲 Quero falar com um especialista
 </a>
 
 </div>
@@ -424,35 +489,25 @@ class="float-link btn-track"
 href="https://linklist.ai/mineirinhotech_site"
 target="_blank"
 >
-🔗
+💬
 </a>
 
-<!-- EVENTOS -->
 <script>
 
 function registrarClique(){
 
-  // FACEBOOK
   if(typeof fbq === 'function'){
 
     fbq('track','Contact');
-
     fbq('track','Lead');
 
   }
 
-  // GOOGLE
   if(typeof gtag === 'function'){
 
     gtag('event','contact_click',{
       event_category:'WhatsApp',
       event_label:'Clique Atendimento',
-      value:1
-    });
-
-    gtag('event','generate_lead',{
-      event_category:'Lead',
-      event_label:'Mineirinho Tech',
       value:1
     });
 
